@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Galerija</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+
+        figcaption {
+            background-color: white;
+            padding: 0.1875rem;
+            text-align: center;
+        }
+
+        #galerija {
+            display: grid;
+        }
+
+        .slika {
+            background-color: lightblue;
+            border: 0.0625rem solid lightgray;
+            border-radius: 3%;
+        }
+
+        .slika img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 9.375rem;
+            height: 9.375rem;
+        }
+
+        @media all and (min-width: 991px) {
+            #galerija {
+                grid-template-columns: repeat(5, 10.9375rem);
+                justify-content: space-around;
+                row-gap: 1rem;
+            }
+        }
+
+        @media all and (min-width: 661px) and (max-width: 990px) {
+            #galerija {
+                grid-template-columns: repeat(3, 9.375rem);
+                justify-content: space-around;
+                row-gap: 0.5rem;
+            }
+        }
+
+        @media all and (min-width: 481px) and (max-width: 660px) {
+            #galerija {
+                grid-template-columns: repeat(3, 9.375rem);
+                justify-content: space-around;
+                row-gap: 0.5rem;
+            }
+        }
+
+        @media all and (max-width: 480px) {
+            #galerija {
+                grid-template-columns: 12.5rem;
+                justify-content: center;
+                row-gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery heading</h1>
+    <div id="galerija">
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+        <div class="slika">
+            <img src="./placeholder-image.png">
+            <figcaption>Image title</figcaption>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Nibh nisl condimentum id venenatis a
+        condimentum vitae sapien pellentesque. Phasellus egestas tellus rutrum tellus pellentesque eu. Elit scelerisque
+        mauris pellentesque pulvinar pellentesque habitant morbi.
+        Nibh venenatis cras sed felis eget velit aliquet. Nunc faucibus a pellentesque sit amet porttitor eget.
+        Penatibus et magnis dis parturient. Nec feugiat in
+        fermentum posuere urna nec. A arcu cursus vitae congue. Et malesuada fames ac turpis egestas maecenas pharetra
+        convallis posuere. Ipsum faucibus vitae aliquet nec.
+        Neque ornare aenean euismod elementum nisi quis. Odio facilisis mauris sit amet massa vitae tortor. Etiam
+        dignissim diam quis enim.</p>
+</body>
+</html>
